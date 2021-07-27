@@ -1,11 +1,13 @@
 :root{
     --primary-font:'Poppins', sans-serif;
-    --dark-color:#1c1c1c;
+    --dark-color:#1e1e1e
+    ;
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--primary-font);
 }
 html,body{
     padding: 0;
