@@ -37,13 +37,12 @@
   }
 
   #empire-entry-slide{
-    background-color: rgb(224, 224, 224);
+    background-color: var(--dark-color);
     /* background image original- ../content/slider/slide-1.jpg */
     background-image: url('https://images.unsplash.com/photo-1627444418145-eb7f7112762d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1789&q=80');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-blend-mode: multiply;
   }
   .empire-entry-slide-content{
     width: 100%;
