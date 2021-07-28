@@ -1,5 +1,7 @@
 :root{
     --primary-font:'Poppins', sans-serif;
+    --primary-color:#6f6f6f;
+    --secondary-color:#2c2c2c;
     --dark-color:#1e1e1e
     ;
 }
@@ -12,6 +14,23 @@
 html,body{
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+    background-color: #6f6f6f;
+}
+body::-webkit-scrollbar-button{
+    background-color: #6f6f6f;
+    height: 0px;
+}
+body::-webkit-scrollbar-corner{
+    border-radius: 5px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #0088c7;
+    border-radius: 7px;
 }
 header{
     position: fixed;

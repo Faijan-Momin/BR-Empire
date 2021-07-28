@@ -37,12 +37,12 @@
   }
 
   #empire-entry-slide{
-    background-color: var(--dark-color);
+    background-color:#000;
     /* background image original- ../content/slider/slide-1.jpg */
-    background-image: url('https://images.unsplash.com/photo-1627444418145-eb7f7112762d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1789&q=80');
+    background-image: url('../content/slider/slide.png');
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat-x;
+    background-size: 70% 100%;
   }
   .empire-entry-slide-content{
     width: 100%;
@@ -72,6 +72,9 @@
   .logo-blw-txt{
     color: #fff;
     font-size: 1rem;
+  }
+  .empire-slide-below-logo-quote{
+    margin-top: 55vh;
   }
   .empire-slide-below-logo-quote p{
     color: #fff;
@@ -125,6 +128,7 @@
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 20px;
+    color: #fff;
   }
 
   .health-hydration-heading p{
@@ -195,3 +199,348 @@
     line-height: 40px;
     color: rgba(0, 0, 0, 0.57);
   }
+
+  /* Claims and benifites */
+  .claims-and-benifit-section{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fff;
+    padding: 50px;
+  }
+  .claims-and-benifit-section-title{
+    font-family: var(--primary-font);
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0 40px 0;
+    z-index: 2;
+  }
+  .claims-and-benifit-section-title h2{
+    font-size: 2rem;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+  .claims-and-benifit-info-box{
+    height: 50vh;
+    width: 100vh;
+    padding: 50px 45px;
+    z-index: 2;
+  }
+
+  #claims-and-benifit-box-1{
+    background-color: var(--dark-color);
+    margin-left: -65vh;
+  }
+  #claims-and-benifit-box-2{
+    background-color: var(--primary-color);
+    margin-left: 65vh;
+  }
+  #claims-and-benifit-box-3{
+    background-color: var(--secondary-color);
+    margin-left: -65vh;
+  }
+
+
+  .claims-and-benifit-info-box-title{
+    margin-bottom: 40px;
+  }
+  .claims-and-benifit-info-box-title h3{
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    font-size: 1.4rem;
+  }
+  .claims-and-benifit-info-box-desc p{
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 0.6px;
+    font-size: 1.2rem;
+    line-height: 35px;
+  }
+
+  /* Pattern */
+  .eclipse-design{
+    height: 60vh;
+    width: 60vh;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+  }
+  #health-and-hydration-section-eclipse-1{
+    position: absolute;
+    top: 360vh;
+    left: 90vh;
+    z-index: 1;
+  }
+  #health-and-hydration-section-eclipse-2{
+    position: absolute;
+    top: 420vh;
+    left: 50vh;
+    z-index: 1;
+  }
+
+
+  /* Why Empire Water Section */
+  .why-br-empire{
+    background-color: #3e3e3e;
+    padding: 40px 20px;
+    width: 100%;
+    height:258vh;
+    z-index: 3;
+  }
+  .why-br-empire-title{
+    padding: 2% 10%;
+  }
+  .why-br-empire-title h2{
+    color: #fff;
+    font-size: 2rem;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+  }
+  .why-br-empire-title p{
+    color: #fff;
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+    font-family: 300;
+    margin-top: 20px;
+  }
+  .why-br-empire-figure{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 40px;
+  }
+  .why-br-empire-figure-image{
+    background-image: url('../content/shapes/circlesvg.png');
+    width: 40vh;
+    height: 150vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .why-br-empire-figure-left-ingredients p,.why-br-empire-figure-right-ingredients p{
+    background-color: rgba(0, 0, 0, 0.342);
+    color: #fff;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  #figure-left-ingredients-1{
+    margin-top: 3vh;
+  }
+  #figure-left-ingredients-2{
+    margin-top: 37vh;
+  }
+  #figure-left-ingredients-3{
+    margin-top: 37vh;
+  }
+  #figure-left-ingredients-4{
+    margin-top: 37vh;
+  }
+  /* Right */
+
+  #figure-right-ingredients-1{
+    margin-top: 24vh;
+  }
+  #figure-right-ingredients-2{
+    margin-top: 34vh;
+  }
+  #figure-right-ingredients-3{
+    margin-top: 34vh;
+  }
+
+  /* Range Div */
+  .why-br-empire-product-range{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 60px;
+    z-index: 2;
+  }
+  .why-br-empire-product-range-block{
+    height: 40vh;
+    width: 40%;
+    background-color: #000;
+    color: #fff;
+    padding: 50px 40px;
+  }
+  .why-br-empire-product-range-block h4{
+    color: white;
+    font-size: 1.4rem;
+    letter-spacing: 0.6px;
+    margin-bottom: 20px;
+  }
+  .why-br-empire-product-range-block p{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.2rem;
+    letter-spacing: 0.6px;
+    margin-bottom: 8px;
+  }
+
+  .why-br-empire-product-range-image{
+    height: 70vh;
+    width: 50%;
+    background-image: url('../content/images/all-bottles.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  /* Pattern */
+  .circle-pattern{
+    height: 60vh;
+    width: 60vh;
+    background-color: #f0f0f094;
+    border-radius: 50%;
+    background-blend-mode: multiply;
+  }
+  #why-br-empire-pattern-1{
+    position:absolute;
+    top: 550vh;
+    right: -20vh;
+  }
+  #why-br-empire-pattern-2{
+    position:absolute;
+    top: 650vh;
+    left: -30vh;
+  }
+  #why-br-empire-pattern-3{
+    position:absolute;
+    top: 780vh;
+    right: -10vh;
+    z-index: -1;
+  }
+  #why-br-empire-pattern-4{
+    position:absolute;
+    top:793vh;
+    left: -20vh;
+  }
+
+  /* Image Section */
+  .images-section{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 25vh;
+  }
+
+.image-section-image{
+  height: 35vh;
+  width: 50vh;
+  border-radius: 14px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+  margin-bottom: 5vh;
+}
+#image-section-image-1{
+  background-image: url('../content/images/img1.png');
+}
+#image-section-image-2{
+  background-image: url('../content/images/img2.png');
+}
+#image-section-image-3{
+  background-image: url('../content/images/img3.png');
+}
+
+#image-section-hr{
+  border-top: 2px solid black;
+  height: 2px;
+  width: 40%;
+  margin-bottom: 20px;
+  margin-left: 30%;
+  border-radius: 20px;
+}
+
+/* Filteration Process */
+.filteration-process{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+}
+.filteration-process-heading{
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000;
+  width: 60%;
+}
+
+.filteration-process-image{
+  background-image: url('../content/images/filteration.png');
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.essential-section{
+  width: 100%;
+  height: 60vh;
+  background-color: #0b0b0b;
+  background-image: url('../content/images/2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.benifits-section{
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  background-image: url('../content/images/3.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.symbols-section{
+  width: 100%;
+  height: 60vh;
+  background-color: #0b0b0b;
+  background-image: url('../content/images/1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.certificate-section{
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  background-image: url('../content/images/certificates.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+footer{
+  width: 100%;
+  height: 60vh;
+  background-color: #0b0b0b;
+  background-image: url('../content/images/footer.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
