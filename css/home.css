@@ -148,6 +148,7 @@
     overflow: hidden;
     gap: 0px;
     margin-bottom: 40px;
+    z-index: 3;
   }
   .health-hydration-section-image-product{
     height: 50vh;

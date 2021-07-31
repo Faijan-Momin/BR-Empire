@@ -39,6 +39,7 @@ header{
     width: 100%;
     height: fit-content;
     background-color: #fff;
+    box-shadow: #1e1e1e 0px 2px 12px -5px;
     z-index: 9;
 }
 .header,.navbar-list{
