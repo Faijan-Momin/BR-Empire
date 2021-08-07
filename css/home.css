@@ -1,12 +1,17 @@
 *{
   font-family: var(--primary-font);
 }
+body{
+  width: 100%;
+  overflow-x: hidden;
+}
 .swiper-slide{
     z-index: 2;
 }
 .swiper-container {
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
   }
   .swiper-button-prev::after,.swiper-button-next::after{
     background-color: var(--dark-color);
@@ -103,11 +108,18 @@
 
 
   /* Range Swiper slide */
+  .range-slider-section{
+    width: 100%;
+    height: fit-content;
+    padding: 2% 8%;
+    overflow-x: hidden;
+  }
 
   /* Health and hydration section */
 
   .health-and-hydration-section{
     width: 100%;
+    overflow: hidden;
     height: fit-content;
     background-color: var(--dark-color);
     color: white;
@@ -205,7 +217,7 @@
   /* Claims and benifites */
   .claims-and-benifit-section{
     width: 100%;
-    height: fit-content;
+    height: 170vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -213,6 +225,7 @@
     gap: 20px;
     background-color: #fff;
     padding: 50px;
+    overflow: hidden;
   }
   .claims-and-benifit-section-title{
     font-family: var(--primary-font);
@@ -276,14 +289,14 @@
   }
   #health-and-hydration-section-eclipse-1{
     position: absolute;
-    top: 360vh;
-    left: 90vh;
+    margin-top: -45%;
+    margin-left: 10%;
     z-index: 1;
   }
   #health-and-hydration-section-eclipse-2{
     position: absolute;
-    top: 420vh;
-    left: 50vh;
+    margin-top: 10%;
+    margin-left: -20%;
     z-index: 1;
   }
 
@@ -320,6 +333,7 @@
     justify-content: center;
     align-items: flex-start;
     margin-top: 40px;
+    overflow: hidden;
   }
   .why-br-empire-figure-image{
     background-image: url('../content/shapes/circlesvg.png');
@@ -330,7 +344,7 @@
     background-size: contain;
   }
   .why-br-empire-figure-left-ingredients p,.why-br-empire-figure-right-ingredients p{
-    background-color: rgba(0, 0, 0, 0.342);
+    background-color: rgba(41, 41, 41, 0.753);
     color: #fff;
     width: fit-content;
     height: fit-content;
@@ -338,29 +352,37 @@
     border-radius: 25px;
     font-size: 1.3rem;
     text-align: center;
+    
   }
   #figure-left-ingredients-1{
     margin-top: 3vh;
+    z-index: 2;
   }
   #figure-left-ingredients-2{
     margin-top: 37vh;
+    z-index: 2;
   }
   #figure-left-ingredients-3{
     margin-top: 37vh;
+    z-index: 2;
   }
   #figure-left-ingredients-4{
     margin-top: 37vh;
+    z-index: 2;
   }
   /* Right */
 
   #figure-right-ingredients-1{
     margin-top: 24vh;
+    z-index: 2;
   }
   #figure-right-ingredients-2{
     margin-top: 34vh;
+    z-index: 2;
   }
   #figure-right-ingredients-3{
     margin-top: 34vh;
+    z-index: 2;
   }
 
   /* Range Div */
@@ -386,12 +408,14 @@
     font-size: 1.4rem;
     letter-spacing: 0.6px;
     margin-bottom: 20px;
+    z-index: 3;
   }
   .why-br-empire-product-range-block p{
     color: rgba(255, 255, 255, 0.6);
     font-size: 1.2rem;
     letter-spacing: 0.6px;
     margin-bottom: 8px;
+    z-index: 3;
   }
 
   .why-br-empire-product-range-image{
@@ -409,28 +433,39 @@
     width: 60vh;
     background-color: #f0f0f094;
     border-radius: 50%;
-    background-blend-mode: multiply;
   }
   #why-br-empire-pattern-1{
     position:absolute;
-    top: 550vh;
-    right: -20vh;
+    margin-top: -18%;
+    margin-left: 95%;
+    z-index: 0;
   }
   #why-br-empire-pattern-2{
     position:absolute;
-    top: 650vh;
-    left: -30vh;
+    margin-top: 22%;
+    margin-left: -95%;
+    z-index: 0;
   }
   #why-br-empire-pattern-3{
     position:absolute;
-    top: 780vh;
-    right: -10vh;
+    margin-top: 85%;
+    margin-left: 65%;
     z-index: -1;
   }
   #why-br-empire-pattern-4{
     position:absolute;
-    top:793vh;
-    left: -20vh;
+    margin-top: 94%;
+    margin-left: -95%;
+    z-index: 0;  
+  }
+  #why-br-empire-pattern-5{
+    position:absolute;
+    margin-top: 83%;
+    margin-left: 70%;
+    z-index: -1;  
+    background-blend-mode: multiply;
+    height: 50vh;
+    width: 50vh;
   }
 
   /* Image Section */
@@ -499,50 +534,248 @@
   background-size: contain;
 }
 
+/* Essestial section */
+
 .essential-section{
   width: 100%;
-  height: 60vh;
-  background-color: #0b0b0b;
-  background-image: url('../content/images/2.jpg');
+  height: fit-content;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 2% 10%;
+  z-index: 3;
+}
+.essential-section-info{
+  padding: 0 15px;
+  width: 50%;
+}
+.essential-section-info-title h2{
+  font-size: 2rem;
+  color: #fff;
+  font-family: var(--primary-font);
+  font-weight: 600;
+  line-height: 55px;
+}
+.essential-section-info-desc{
+  margin-top: 25px;
+}
+.essential-section-info-desc p{
+  font-size: 1rem;
+  color: #fff;
+  font-family: var(--primary-font);
+  font-weight: 500;
+  line-height: 30px;
+}
+.essential-section-info-button{
+  margin-top: 20px;
+}
+.essential-section-info-button button{
+  height: fit-content;
+  width: 200px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  color: #000;
+  background-color: #f0f0f0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.essential-section-info-button button:hover{
+  transition: 300ms ease-in-out;
+  transform: scale(0.95);
+  background-color: #b4b4b4;
+}
+.essential-section-bottle-image{
+  width: 50%;
+  height: 55vh;
+  background-color: transparent;
+  background-image: url('../content/images/bottles.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  margin-left: -8%;
 }
+
+
+/* Benifit Diagram Section */
+
 .benifits-section{
-  width: 100%;
   height: 100vh;
-  background-color: #fff;
-  background-image: url('../content/images/3.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-.symbols-section{
   width: 100%;
-  height: 60vh;
-  background-color: #0b0b0b;
-  background-image: url('../content/images/1.jpg');
+  background-color: #fff;
+  padding: 3% 10%;
+  overflow: hidden;
+}
+.benifit-section-diagram{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 100vh;
+}
+.benifit-section-diagram-center-module{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 40vh;
+  width: 40vh;
+  background-image: url('../content/shapes/benifit-circle-group.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.certificate-section{
-  width: 100%;
-  height: 100vh;
-  background-color: #fff;
-  background-image: url('../content/images/certificates.jpg');
+.benifit-section-diagram-left-modules, .benifit-section-diagram-right-module{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+}
+.benifit-section-diagram-left-modules{
+  position: relative;
+  left: 10vh;
+}
+.benifit-section-diagram-right-module{
+  position: relative;
+  right: 10vh;
+}
+.benifit-section-diagram-left-module-top{
+  height: 30vh;
+  width: 30vh;
+  background-image: url('../content/shapes/detox.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
+.benifit-section-diagram-left-module-bottom{
+  height: 30vh;
+  width: 30vh;
+  background-image: url('../content/shapes/cleanses.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.benifit-section-diagram-right-module-top{
+  height: 30vh;
+  width: 30vh;
+  background-image: url('../content/shapes/replenish.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.benifit-section-diagram-right-module-bottom{
+  height: 30vh;
+  width: 30vh;
+  background-image: url('../content/shapes/keep-body.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.benifit-shape{
+  height: 120vh;
+  width: 120vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 1;
+}
+#benifit-shape-1{
+  position: absolute;
+  background-image: url('../content/shapes/Rectangle-left.png');
+  margin-top: -50%;
+  margin-left: -40%;
+}
+#benifit-shape-2{
+  position: absolute;
+  background-image: url('../content/shapes/Rectangle-right.png');
+  margin-top: -61%;
+  margin-left: 60%;
+}
+
+/* Symbol Section */
+.symbols-section{
+  height: fit-content;
+  width: 100%;
+  padding: 2% 8%;
+  background-color: #000;
+  overflow: hidden;
+}
+.symbol-section-all-symbols{
+  height: fit-content;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.symbol-section-single-symbol{
+  height: 30vh;
+  width: 30vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#symbol-section-symbol-1{
+  background-image: url('../content/shapes/lungs.svg');
+  margin-left: -25%;
+}
+#symbol-section-symbol-2{
+  background-image: url('../content/shapes/bones.svg');
+  margin-left: -25%;
+}
+#symbol-section-symbol-3{
+  background-image: url('../content/shapes/brain.svg');
+  margin-left: -25%;
+}
+#symbol-section-symbol-4{
+  background-image: url('../content/shapes/muscles.svg');
+  margin-top: 15%;
+  margin-left: 25%;
+}
+#symbol-section-symbol-5{
+  background-image: url('../content/shapes/heart.svg');
+  margin-top: 15%;
+  margin-left: 25%;
+}
+#symbol-section-symbol-6{
+  background-image: url('../content/shapes/eyes.svg');
+  margin-top: 15%;
+  margin-left: 25%;
+}
+
+
+/* Certificates Section */
+.certificate-section{
+  height: 100vh;
+  width: 100%;
+  padding: 3% 8%;
+  background-color: #fff;
+  
+}
+.certificate-section-certificate-image{
+  background-image: url('../content/images/certificates.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 90vh;
+  width: 100%;
+}
+
+/* Footer */
 
 footer{
   width: 100%;
-  height: 60vh;
+  height: 50vh;
   background-color: #000;
-  background-image: url('../content/images/footers.png');
+  background-image: url('../content/images/blank_footer.png');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }

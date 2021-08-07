@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="243.523" height="205.523" viewBox="0 0 243.523 205.523">
+  <g>
+    <path fill="none" stroke="rgb(44,44,44)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="5" d="M14.76157527 193.76157527l40-40"/>
+    <path fill="none" stroke="rgb(44,44,44)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="5" d="M180.76157527 52.26157527l41-40.5"/>
+    <path fill="none" stroke="rgb(44,44,44)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="5" d="M231.76157527 193.76157527l-46-40"/>
+    <path fill="none" stroke="rgb(44,44,44)" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="5" d="M57.76157527 51.76157527l-46-40"/>
+    <path fill="rgb(223,223,223)" fill-rule="evenodd" d="M118.26157527 23.76157527h5c44.42915948 0 80.5 36.07084053 80.5 80.5 0 44.42915948-36.07084052 80.5-80.5 80.5h-5c-44.42915947 0-80.5-36.07084052-80.5-80.5 0-44.42915947 36.07084053-80.5 80.5-80.5z"/>
+    <text font-size="0" style="white-space:pre">
+      <tspan x="73.066" y="111.762" fill="rgb(28,28,28)" font-family="Arial" font-size="20" font-weight="400" style="white-space:pre;text-transform:none" letter-spacing="3">Benefits</tspan>
+    </text>
+  </g>
+</svg>

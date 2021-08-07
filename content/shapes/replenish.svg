@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="235" height="229" viewBox="0 0 235 229">
+  <g>
+    <path fill="rgb(44,44,44)" fill-rule="evenodd" d="M114.5 0h6C183.6942703 0 235 51.3057297 235 114.5S183.6942703 229 120.5 229h-6C51.3057297 229 0 177.6942703 0 114.5S51.3057297 0 114.5 0z"/>
+    <text font-size="0" style="white-space:pre">
+      <tspan x="43.257" y="96" fill="rgb(223,223,223)" font-family="Arial" font-size="18" font-weight="400" style="white-space:pre;text-transform:none" letter-spacing=".9"> Replenishes the </tspan> <tspan x="41.809" y="121" fill="rgb(223,223,223)" font-family="Arial" font-size="18" font-weight="400" style="white-space:pre;text-transform:none" letter-spacing=".9">body with natural </tspan> <tspan x="76.94" y="146" fill="rgb(223,223,223)" font-family="Arial" font-size="18" font-weight="400" style="white-space:pre;text-transform:none" letter-spacing=".9">minerals.</tspan>
+    </text>
+  </g>
+</svg>
