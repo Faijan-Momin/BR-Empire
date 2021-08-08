@@ -13,14 +13,15 @@ var swiper = new Swiper(".intro", {
 var swiper = new Swiper('.range', {
     grabCursor: true,
     centeredSlides: true,
-    freeMode: true,
+    freeMode: false,
     slidesPerView: 'auto',
+    initialSlide: 3,
     effect: 'coverflow',
     coverflowEffect: {
         rotate: 50,
         stretch: 0,
         depth: 100,
-        modifier: 1,
+        modifier: 0,
         slideShadows : true
     },
     pagination: {
