@@ -265,6 +265,16 @@ footer{
         display: block;
     }
 
+    .header,#navbar-list{
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: row;
+      gap: 35px;
+      padding: 6px;
+  }
     #navbar-list{
         width: 90%;
         height: 90vh;
