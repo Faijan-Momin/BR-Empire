@@ -2,7 +2,6 @@
   font-family: var(--primary-font);
 }
 body{
-  width: 100%;
   overflow-x: hidden !important;  
 }
 .swiper-slide{
@@ -262,6 +261,9 @@ body{
       padding: 10px 30px;
       overflow: scroll;
       scroll-behavior: smooth;
+    }
+    .health-hydration-section-info-product::-webkit-scrollbar{
+      display: none;
     }
 
     .health-hydration-section-info-product h3{
@@ -730,8 +732,10 @@ body{
     #why-br-empire-pattern-1{
       position:absolute;
       margin-top: -18%;
-      margin-left: 95%;
+      margin-left: 25%;
       z-index: 0;
+      display: none;
+
     }
     #why-br-empire-pattern-2{
       position:absolute;
@@ -742,14 +746,16 @@ body{
     #why-br-empire-pattern-3{
       position:absolute;
       margin-top: 175%;
-      margin-left: 65%;
+      margin-left: 25%;
       z-index: 0;
+      display: none;
     }
     #why-br-empire-pattern-4{
       position:absolute;
       margin-top: 140%;
       margin-left: -95%;
       z-index: 0;  
+
     }
     #why-br-empire-pattern-5{
       height: 0vh;
