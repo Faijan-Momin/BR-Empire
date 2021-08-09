@@ -1,0 +1,205 @@
+.contact-us-section{
+    width: 100%;
+    height: fit-content;
+    background-color: var(--dark-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 60px;
+}
+.contact-us-section-title{
+    text-align: center;
+    padding: 50px 0 10px 0;
+    position: relative;
+}
+.contact-us-section-title h2{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 700;
+}
+.contact-us-section-title::after{
+    position: absolute;
+    content: '';
+    left: 25%;
+    height: 2px;
+    background-color: #fff;
+    width: 50%;
+}
+
+.contact-us-section-desc{
+    margin-top: 6vh;
+    width: 95%;
+    text-align: center;
+}
+.contact-us-section-desc p{
+    color: rgba(255, 255, 255, 0.733);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.contact-us-section-desc #brand-name-laser{
+    color: rgba(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: underline;
+    position: relative;
+    top: 12px;
+}
+
+
+/* Contribution Laser Text */
+
+.title {
+    position: relative;
+    text-align: center;
+    transform: translateZ(0);
+    transform-style: preserve-3d;
+    margin-top: 30px;
+  }
+  
+  .title .text {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: calc(12vw / var(--word-total) );
+    line-height: 1.0;
+  }
+  
+  .title .write .word {
+    color: rgba(255, 255, 255);
+    text-shadow: 0 0 0.1em currentColor;
+    transform-style: preserve-3d;
+    -webkit-animation: write linear both;
+            animation: write linear both;
+  }
+  
+  .title .laser {
+    position: absolute;
+    top: 0;
+    left: 33%;
+    /* To avoid the blur getting masked by the clip-path we had to duplicate the element */
+    filter: blur(4px) contrast(10);
+    pointer-events: none;
+  }
+  
+  .title .laser .word {
+    display: inline-block;
+  }
+  
+  .title .laser .word {
+    color: hsl(0, 96%, 69%);
+    text-shadow: 0 0 0.1em currentColor;
+    transform: translateZ(5px);
+    -webkit-animation: laser linear both;
+            animation: laser linear both;
+  }
+  
+  .title .write .word,
+  .title .laser .word {
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-delay: calc(0.3s + var(--word-index) * 160ms);
+            animation-delay: calc(0.3s + var(--word-index) * 160ms);
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  
+  .title:hover .word {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+  }
+  
+  /* .title .text .word,
+  .title .text .word::before {
+    animation-play-state: paused;
+    animation-delay: -0.4s;
+  } */
+  
+  @-webkit-keyframes write {
+    from, 30% { -webkit-clip-path: polygon(-20% 0%, -15% 0%, -15% 100%, -20% 100%); clip-path: polygon(-20% 0%, -15% 0%, -15% 100%, -20% 100%) }
+    70%, to { -webkit-clip-path: polygon(-15% 0%, 120% 0%, 120% 100%, -15% 100%); clip-path: polygon(-15% 0%, 120% 0%, 120% 100%, -15% 100%) }
+  }
+  
+  @keyframes write {
+    from, 30% { -webkit-clip-path: polygon(-20% 0%, -15% 0%, -15% 100%, -20% 100%); clip-path: polygon(-20% 0%, -15% 0%, -15% 100%, -20% 100%) }
+    70%, to { -webkit-clip-path: polygon(-15% 0%, 120% 0%, 120% 100%, -15% 100%); clip-path: polygon(-15% 0%, 120% 0%, 120% 100%, -15% 100%) }
+  }
+  
+  @-webkit-keyframes laser {
+    from, 30% { -webkit-clip-path: polygon(-20% 0%, -15% 0%, -15% 100%, -20% 100%); clip-path: polygon(-20% 0%, -15% 0%, -15% 100%, -20% 100%) }
+    70%, to { -webkit-clip-path: polygon(115% 0%, 120% 0%, 120% 100%, 115% 100%); clip-path: polygon(115% 0%, 120% 0%, 120% 100%, 115% 100%) }
+  }
+  
+  @keyframes laser {
+    from, 30% { -webkit-clip-path: polygon(-20% 0%, -15% 0%, -15% 100%, -20% 100%); clip-path: polygon(-20% 0%, -15% 0%, -15% 100%, -20% 100%) }
+    70%, to { -webkit-clip-path: polygon(115% 0%, 120% 0%, 120% 100%, 115% 100%); clip-path: polygon(115% 0%, 120% 0%, 120% 100%, 115% 100%) }
+  }
+
+
+  /* Contribution Laser Text End */
+
+  .contact-us-section-form{
+      margin: 50px 0;
+      height: fit-content;
+      width: fit-content;
+      background-color: #242424;
+      color: #fff;
+      padding: 5%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction:column;
+      gap: 25px;
+      border-radius: 5px;
+  }
+
+  .contact-us-section-form-input input{
+      width: 400px;
+      height: 40px;
+      background-color: transparent;
+      color: #fff;
+      border: none;
+      border-bottom: 1px solid #fff;
+      font-size: 1.2rem;
+  }
+  .contact-us-section-form-input input[type=submit]{
+      width: 120px;
+      height: 40px;
+      border: 1px solid #fff;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  .contact-us-section-form-input input[type=submit]:hover{
+      transform: scale(0.95);
+      transition: 300ms ease-in-out;
+  }
+
+
+
+
+  /* Mobile VIew */
+
+  @media only screen and (max-width:500px) {
+         
+    .contact-us-section-title h2{
+        font-size: 1.4rem;
+    }
+    .contact-us-section-desc p{
+        font-size: 1rem;
+    }
+    .contact-us-section-desc{
+        margin-top: 3vh;
+    }
+    .contact-us-section-form{
+        padding: 5%;
+        gap: 15px;
+    }
+
+    .contact-us-section-form-input input{
+        width: 100%;
+        font-size: 1.2rem;
+    }
+    .contact-us-section-form-input input[type=submit]{
+        margin-top: 20px;
+    }
+
+  }

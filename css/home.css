@@ -40,7 +40,7 @@ body{
 
   #particles-js{
     width: 100% !important;
-    height: fit-content !important;
+    height: 100% !important;
   }
   #empire-entry-slide{
     background-color: var(--dark-color);
