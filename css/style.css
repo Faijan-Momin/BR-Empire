@@ -67,8 +67,8 @@ header{
 /* Hamburger */
 
 .hamburger .line{
-    width: 45px;
-    height: 5px;
+    width: 35px;
+    height: 3px;
     background-color: #fff;
     display: block;
     margin: 8px auto;
@@ -110,17 +110,17 @@ header{
   }
   
   #hamburger-6.is-active .line:nth-child(1){
-    -webkit-transform: translateY(13px);
-    -ms-transform: translateY(13px);
-    -o-transform: translateY(13px);
-    transform: translateY(13px);
+    -webkit-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+    transform: translateY(10px);
   }
   
   #hamburger-6.is-active .line:nth-child(3){
-    -webkit-transform: translateY(-13px) rotate(90deg);
-    -ms-transform: translateY(-13px) rotate(90deg);
-    -o-transform: translateY(-13px) rotate(90deg);
-    transform: translateY(-13px) rotate(90deg);
+    -webkit-transform: translateY(-11px) rotate(90deg);
+    -ms-transform: translateY(-11px) rotate(90deg);
+    -o-transform: translateY(-11px) rotate(90deg);
+    transform: translateY(-11px) rotate(90deg);
   }
   
 

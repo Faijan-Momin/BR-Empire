@@ -1,0 +1,131 @@
+body{
+    background-color: var(--dark-color);
+    padding: 2%;
+}
+.main-content{
+    height: 100%;
+    width: 100%;
+    background-color:#000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+
+}
+.logo{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#comapny-logo{
+    height: 50px;
+    width: 100%;
+    background-image: url('../content/Logo/br-logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.dare-to-be{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.dare-to-be p{
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 100;
+}
+.dare-to-be hr{
+    height: 1px;
+    width: 50px;
+    background-color: #fff;
+    margin-top: 10px;
+}
+
+.changing-titles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+#changing-names{
+    font-size: 4rem;
+    color: #fff;
+    font-family: 'Secular One', sans-serif;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+#changing-names::before{
+    content: 'awesome';
+    animation: animate infinite 3s;
+}
+@keyframes animate {
+    0%{
+        content: 'awesome';
+    }
+    12%{
+        content: 'bold';
+    }
+    24%{
+        content: 'cuckoo';
+    }
+    36%{
+        content: 'curious';
+    }
+    48%{
+        content: 'intense';
+    }
+    60%{
+        content: 'loud';
+    }
+    72%{
+        content: 'fearless';
+    }
+    84%{
+        content: 'unique';
+    }
+    
+}
+.arrow-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    flex-direction: column;
+    width: 100%;
+}
+#trinagle{
+    height: 120px;
+    width: 300px;
+    background-image: url('../content/shapes/elem-home-1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 30px;
+}
+#lines{
+    height: 100px;
+    width: 100px;
+    background-image: url('../content/shapes/lines.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.dot-pattern{
+    position: absolute;
+    top: 130px;
+    left: 60%;
+    height: 400px;
+    width: 400px;
+    background-image: url('../content/shapes/dot.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
