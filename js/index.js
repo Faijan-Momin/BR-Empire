@@ -1,5 +1,5 @@
 window.onload = function(){
     setTimeout(() => {
         window.location.replace('home.html');
-    }, 3500);
+    }, 3200);
 }

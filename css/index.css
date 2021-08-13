@@ -39,6 +39,8 @@ body{
 .dare-to-be p{
     color: rgba(255, 255, 255, 0.6);
     font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
 }
 .dare-to-be hr{
     height: 1px;
@@ -62,34 +64,23 @@ body{
     text-transform: capitalize;
 }
 #changing-names::before{
-    content: 'awesome';
-    animation: animate infinite 3s;
+    content: 'Be';
+    animation: animate infinite 2500ms;
 }
 @keyframes animate {
     0%{
-        content: 'awesome';
+        content: 'Be';
     }
-    12%{
-        content: 'bold';
+    25%{
+        content: 'Aware';
     }
-    24%{
-        content: 'cuckoo';
+    50%{
+        content: 'of';
     }
-    36%{
-        content: 'curious';
+    75%{
+        content: 'duplication';
     }
-    48%{
-        content: 'intense';
-    }
-    60%{
-        content: 'loud';
-    }
-    72%{
-        content: 'fearless';
-    }
-    84%{
-        content: 'unique';
-    }
+    
     
 }
 .arrow-icon{
