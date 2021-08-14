@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+	<header>
+        <div class="header">
+            <div class="header-admin-logo">
+                <!-- <h1>BR Bevereges</h1> -->
+            </div>
+			<button id="logoff-btn"><i class="fa fa-power-off" aria-hidden="true"></i></button>
+        </div>
+    </header>
+	
+	<div class="views-blocks">
+		<p id="view-chart-text">Views Overview</p>
+		<div class="view-block-single">
+			<p>Today</p>
+			<h2>100</h2>			
+		</div>
+		<div class="view-block-single">
+			<p>This Month</p>
+			<h2>100</h2>			
+		</div>
+		<div class="view-block-single">
+			<p>Total</p>
+			<h2>100</h2>			
+		</div>
+	</div>
+	<hr id="view-below-hr">
+	<p id="view-chart-text">Views Chart</p>
+    <div class="chart">
+        <canvas id="myChart" width="400" height="150"></canvas>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.js"></script>
+
+<script>
+var ctx = document.getElementById('myChart').getContext('2d');
+var chart = new Chart(ctx, {
+	// The type of chart we want to create
+	type: 'line', // also try bar or other graph types
+
+	// The data for our dataset
+	data: {
+		labels: ["Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec", "Jan", "Feb", "Mar", "Apr", "May","Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec", "Jan", "Feb", "Mar", "Apr", "May"],
+		// Information about the dataset
+    datasets: [{
+			label: "Views",
+			backgroundColor: 'lightblue',
+			borderColor: 'royalblue',
+			data: [20, 500, 100, 320, 300, 500, 600, 400, 500, 820, 700, 900,100, 500, 500, 320, 300, 500, 600, 400, 100, 800, 700, 900],
+		}]
+	},
+
+	// Configuration options
+	options: {
+    layout: {
+      padding: 10,
+    },
+		legend: {
+			position: 'bottom',
+		},
+		title: {
+			display: true,
+			text: 'Website Views'
+		},
+		scales: {
+			yAxes: [{
+				scaleLabel: {
+					display: true,
+					labelString: 'Views'
+				}
+			}],
+			xAxes: [{
+				scaleLabel: {
+					display: true,
+					labelString: 'Months'
+				}
+			}]
+		}
+	}
+});
+</script>
+</body>
+</html>
