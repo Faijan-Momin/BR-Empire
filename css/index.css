@@ -1,6 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+}
 body{
     background-color: var(--dark-color);
     padding: 2%;
+    width: 100%;
+    height: 100%;
 }
 .main-content{
     height: 100%;
@@ -119,4 +127,25 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+@media only screen and (max-width:500px) {
+    #changing-names{
+        font-size: 3rem;
+        color: #fff;
+        font-family: 'Secular One', sans-serif;
+        font-weight: 900;
+        text-transform: capitalize;
+    }
+    .dot-pattern{
+        position: absolute;
+        top: 130px;
+        left: 30%;
+        height: 200px;
+        width: 200px;
+        background-image: url('../content/shapes/dot.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
 }
